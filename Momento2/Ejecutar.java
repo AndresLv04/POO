@@ -3,9 +3,11 @@ import java.util.Date;
 public class Ejecutar {
     public static void main(String[] args) {
 
-        Foto objFoto1 = new Foto(1, "MedioAmbiente.png");
-        Foto obFoto2 = new Foto(1, "EquipoUCC.JPG");
-        Foto objFoto3 = new Foto(1, "Evidencia.JPEG");
+        Camara camara1 = new Camara("Canon", "EOS 90D");
+
+        Foto objFoto1 = new Foto(1, "MedioAmbiente.png",camara1);
+        Foto obFoto2 = new Foto(1, "EquipoUCC.JPG",camara1);
+        Foto objFoto3 = new Foto(1, "Evidencia.JPEG",camara1);
         
         Foto[] ipnFoto1 = {objFoto1,obFoto2};
         Foto[] ipnFoto2 = {objFoto3};
@@ -19,8 +21,9 @@ public class Ejecutar {
         Producto[] objProductos = {objImpresion1,objImpresion2};
         Pedido objPedido1 = new Pedido(objCliente1, objProductos, new Date(), 111);
 
-        System.out.println(objPedido1.toString());
         
+        objImpresion1.imprimir();
+       
         
     }
     
