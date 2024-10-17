@@ -1,4 +1,3 @@
-
 public class Foto extends Producto{
     private String fichero;
     private Camara camara;
