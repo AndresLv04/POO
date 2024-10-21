@@ -22,7 +22,7 @@ public class JuegoLucha{
         if (jugador1.estaVivo()) {
             System.out.println(jugador1.getNombre() + " ha ganado la pelea");
         }else{
-            System.out.println(jugador2.estaVivo() + "ha ganado la pelea");
+            System.out.println(jugador2.getNombre() + " ha ganado la pelea");
         }
     }
 
