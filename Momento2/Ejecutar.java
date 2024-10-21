@@ -10,10 +10,10 @@ public class Ejecutar {
         Producto objFoto1 = new Foto(1,"MedioAmbiente.png", camara1);
         Producto objFoto2 = new Foto(1, "Evidencia.JPEG",camara1);
         
-        Producto[] objFotos = {objFoto1,objFoto2};
+        Foto[] objFotos = {(Foto) objFoto1,(Foto) objFoto2};
         
 
-        Producto objImpresion1 = new Impresion(2, "Color",);
+        Producto objImpresion1 = new Impresion(2, "Color", objFotos);
         
         
         Cliente objCliente1  = new Cliente("Andres",1222);
@@ -23,7 +23,7 @@ public class Ejecutar {
         Pedido objPedido1 = new Pedido(objCliente1, objProductos, new Date(), 111);
 
         
-        objImpresion1.imprimir();
+        ((Impresion) objImpresion1).imprimir();
         System.out.println();
         System.out.println(objPedido1.toString());
 
