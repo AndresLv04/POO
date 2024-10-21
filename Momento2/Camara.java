@@ -7,8 +7,6 @@ public class Camara {
         this.modelo = modelo;
     }
 
-  
-
     public String getMarca() {
         return marca;
     }
