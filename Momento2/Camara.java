@@ -1,12 +1,16 @@
 public class Camara {
+
+    //Atributos
     private String marca;
     private String modelo;
 
+    //Constructor
     public Camara(String marca, String modelo) {
         this.marca = marca;
         this.modelo = modelo;
     }
 
+    //Métodos get y set
     public String getMarca() {
         return marca;
     }
@@ -25,6 +29,7 @@ public class Camara {
 
 
 
+    //Método toString
     @Override
     public String toString() {
         return "marca: " + marca + " con el modelo: " + modelo;

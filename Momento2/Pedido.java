@@ -2,11 +2,14 @@ import java.util.Arrays;
 import java.util.Date;
 
 public class Pedido {
+
+    //Atributos 
     private Cliente cliente;
     private Producto[] productos;
     private Date fecha;
     private int nTC;
 
+    //Constructor
     public Pedido(Cliente cliente, Producto[] productos, Date fecha, int nTC) {
         this.cliente = cliente;
         this.productos = productos;
@@ -14,6 +17,8 @@ public class Pedido {
         this.nTC = nTC;
     }
 
+    //Método get y set
+    
     public Cliente getCliente() {
         return cliente;
     }
