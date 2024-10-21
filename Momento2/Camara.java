@@ -10,7 +10,7 @@ public class Camara {
         this.modelo = modelo;
     }
 
-    //Métodos get y set
+    //Métodos getters y setters
     public String getMarca() {
         return marca;
     }
