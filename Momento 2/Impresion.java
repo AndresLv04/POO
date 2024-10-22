@@ -56,7 +56,4 @@ public class Impresion extends Producto{
         System.out.println("El precio a pagar por la impresión es: " + calcularPrecio());
     }
 
-
-
-
 }
