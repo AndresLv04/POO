@@ -3,8 +3,8 @@ package Momento3;
 public class Piso {
     //Atributos
     
-    private int numsPisos; //La cantidad de pisos para crear un vector
-    
+    private int numsPisos; //La cantidad de pisos
+
     //botones para indicar dirección
     private Boton botonSubir; 
     private Boton botonBajar;
