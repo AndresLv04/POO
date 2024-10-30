@@ -7,7 +7,7 @@ public class Piso {
 
     //botones para indicar dirección
     private Boton botonSubir; 
-    private Boton botonBajar;
+    private Boton botonBajar; 
 
     public Piso (int numsPisos){
         this.botonSubir = new Boton("Subir");
