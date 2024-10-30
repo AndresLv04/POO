@@ -4,6 +4,7 @@ public class Piso {
     //Atributos
     
     private int numsPisos; //La cantidad de pisos para crear un vector
+    
     //botones para indicar dirección
     private Boton botonSubir; 
     private Boton botonBajar;
@@ -13,4 +14,31 @@ public class Piso {
         this.botonBajar = new Boton("Bajar");
         this.numsPisos = numsPisos; 
     }
+
+    //Método getters y setters
+    public int getNumsPisos() {
+        return numsPisos;
+    }
+
+    public void setNumsPisos(int numsPisos) {
+        this.numsPisos = numsPisos;
+    }
+
+    public Boton getBotonSubir() {
+        return botonSubir;
+    }
+
+    public void setBotonSubir(Boton botonSubir) {
+        this.botonSubir = botonSubir;
+    }
+
+    public Boton getBotonBajar() {
+        return botonBajar;
+    }
+
+    public void setBotonBajar(Boton botonBajar) {
+        this.botonBajar = botonBajar;
+    }
+
+    
 }
