@@ -1,6 +1,6 @@
-package Momento3;
+package Momento3.Botones;
 
-public class botonBajar extends Boton{
+public class BtnBajar extends Boton{
 
    
    //Método para presionar el boton de bajada y saber que fue presionado

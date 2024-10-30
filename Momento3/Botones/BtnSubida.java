@@ -1,4 +1,4 @@
-package Momento3;
+package Momento3.Botones;
 
 public class BtnSubida extends Boton {
 

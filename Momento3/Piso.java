@@ -1,5 +1,9 @@
 package Momento3;
 
+import Momento3.Botones.Boton;
+import Momento3.Botones.BtnBajar;
+import Momento3.Botones.BtnSubida;
+
 public class Piso {
     //Atributos
     
@@ -10,8 +14,8 @@ public class Piso {
     private Boton botonBajar; 
 
     public Piso (int numsPisos){
-        this.botonSubir = new Boton("Subir");
-        this.botonBajar = new Boton("Bajar");
+        this.botonSubir = new BtnSubida();
+        this.botonBajar = new BtnBajar();
         this.numsPisos = numsPisos; 
     }
 

@@ -1,4 +1,4 @@
-package Momento3;
+package Momento3.Botones;
 
 //Clase abstract para los diferentes sonidos
 public abstract class Boton {
