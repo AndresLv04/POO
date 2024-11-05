@@ -1,4 +1,4 @@
-package MomentoFinal.Botones;
+package Botones;
 
 public class BtnSubir extends PlantillaBtns {
 

@@ -1,4 +1,4 @@
-package MomentoFinal.Botones;
+package Botones;
 
 public class BtnsAscensor extends PlantillaBtns{
     //Método que permite saber qué botón de piso fue presionado

@@ -1,4 +1,4 @@
-package MomentoFinal.Botones;
+package Botones;
 
 //Clase que será la plantilla para los botones tanto los del piso como los del ascensor
 public abstract class PlantillaBtns {
