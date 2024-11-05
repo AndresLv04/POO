@@ -1,33 +1,22 @@
 package Momento3;
 
 public class Puerta {
-    private boolean puertaAbierta;
+    private String estado;
 
     public Puerta(){
-        this.puertaAbierta = false;
+        this.estado = "Cerrada";
     }
 
-    //Método getters y setters
-    public boolean getPuertaAbierta() {
-        return puertaAbierta;
+    public void abrir(){
+        this.estado = "Puerta abierta...";
     }
 
-    public void setPuertaAbierta(boolean puertaAbierta) {
-        this.puertaAbierta = puertaAbierta;
+    public void cerrada(){
+        this.estado = "Puera cerrada...";
     }
 
-    //Método para abrir la puerta
-    public void puertaAbierta(){
-        puertaAbierta = true;
-        System.out.println("Puerta abierta...");
+    public void mantenerAbierta(){
+        this.estado = "Esperando...";
     }
 
-    //Método para cerrar la puerta
-    public void puertaCerrar(){
-        puertaAbierta = false;
-        System.out.println("Puerta cerrada...");
-    }
-
-    
-    
 }
