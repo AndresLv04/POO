@@ -1,9 +1,12 @@
 import java.util.Scanner;
 
 public class SistemaControl {
-    private Ascensor ascensor = new Ascensor();
-    private Piso[] pisos;
-    private Scanner sc;
+    //Atributos para el manejo ascensor
+
+    private Ascensor ascensor;
+    private Piso[] pisos; //El array es porque siempre se sabe cuandos pisos hay
+    
+    private Scanner sc; //Solo es para solicitar los datos desde el teclado
 
     public SistemaControl(){
         this.ascensor = new Ascensor();

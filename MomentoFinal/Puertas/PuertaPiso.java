@@ -2,7 +2,8 @@ package Puertas;
 
 public class PuertaPiso implements Puerta{
 
-    //Métodos del comportamiento de las puertas de los pisos
+    //Métodos del comportamiento de las puertas de los pisos, tanto de abrir como de cerrar
+    
     @Override
     public void abrirPuerta() {
         System.out.println("Abriendo puerta del piso ");

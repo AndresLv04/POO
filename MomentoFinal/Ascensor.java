@@ -1,11 +1,10 @@
+import java.util.Random;
+
 import Botones.BtnsAscensor;
 import Botones.PlantillaBtns;
 import Puertas.Puerta;
 import Puertas.PuertaAscensor;
 import Puertas.PuertaPiso;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class Ascensor {
     //Atributos
@@ -25,6 +24,8 @@ public class Ascensor {
 
     //Método para mostrar donde esta ubicado el ascensor
     public void mostrarPisoAscensor() {
+        Random random = new Random();
+        ubnActual = random.nextInt(5) + 1;
         System.out.println("El ascensor esta en el piso " + ubnActual + "\n");
     }
 
