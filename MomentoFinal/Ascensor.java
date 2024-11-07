@@ -8,9 +8,9 @@ import Puertas.PuertaPiso;
 
 public class Ascensor {
     //Atributos
-    private final Puerta puertaAscensor; //Puerta ascensor
-    private final Puerta puertaPiso; //Puertas piso
-    private final PlantillaBtns btnsAscensor; //Botones que están dentro del ascensor
+    private Puerta puertaAscensor; //Puerta ascensor
+    private Puerta puertaPiso; //Puertas piso
+    private PlantillaBtns btnsAscensor; //Botones que están dentro del ascensor
     private int ubnActual; //Ubicación del ascensor
     private String estado; //Estado del ascensor si está subiendo, bajando o mantenimiento
 
@@ -25,8 +25,8 @@ public class Ascensor {
     //Método para mostrar donde esta ubicado el ascensor
     public void mostrarPisoAscensor() {
         Random random = new Random();
-        ubnActual = random.nextInt(5) + 1;
-        System.out.println("El ascensor esta en el piso " + ubnActual + "\n");
+        ubnActual = random.nextInt(4) + 0;
+        System.out.println("\n El ascensor esta " + estado + " en el piso " + ubnActual + "\n");
     }
 
     //Método para mover el ascensor
@@ -60,9 +60,11 @@ public class Ascensor {
             Thread.sleep(1000);
             estado = "parado";
             System.out.println("Las puertas del ascensor y del piso " + ubnActual + " están abiertas.");
-            Thread.sleep(4000);
+            Thread.sleep(5000);
             puertaPiso.cerrarPuerta();
             puertaAscensor.cerrarPuerta();
+            System.out.println("Las puertas del ascensor y del piso " + ubnActual + " están cerradas.");
+
 
         }catch (InterruptedException e){
             System.out.println("El ascensor esta en el piso " + ubnActual);
@@ -76,7 +78,6 @@ public class Ascensor {
     public void psrBtnAscensor(int pisoDestino) {
         btnsAscensor.presionar(pisoDestino);
         mover(pisoDestino);
-
     }
 
 
