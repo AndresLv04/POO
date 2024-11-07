@@ -60,7 +60,4 @@ public class SistemaControl {
         ascensor.psrBtnAscensor(pisoDestino);
     }
 
-    public void manejarAscensor(){
-
-    }
 }

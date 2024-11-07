@@ -1,7 +1,7 @@
 package Botones;
 
 //Clase que será la plantilla para los botones tanto los del piso como los del ascensor
-public abstract class PlantillaBtns {
+public abstract class Botones {
 
     //Método qué muestra la señal de confirmación que un botón fue presionado
     public void senalConfirmation(){
@@ -17,7 +17,5 @@ public abstract class PlantillaBtns {
     //los diferentes botones que están el piso y dentro del ascensor
     //El parámetro es para saber en qué piso se presionó y luego saber que piso quiere ir
     public abstract void presionar(int piso);
-
-
 
 }

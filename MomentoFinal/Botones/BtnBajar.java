@@ -1,6 +1,6 @@
 package Botones;
 
-public class BtnBajar extends PlantillaBtns{
+public class BtnBajar extends Botones{
 
     //Método para presionar el botón de bajada en cualquiera de los pisos donde este botón
     @Override

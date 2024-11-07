@@ -4,8 +4,8 @@ import Puertas.PuertaPiso;
 
 public class Piso {
     //Atributos
-    private PlantillaBtns btnSubir; //Botón de subida
-    private PlantillaBtns btnBajar; //Botón de bajada
+    private Botones btnSubir; //Botón de subida
+    private Botones btnBajar; //Botón de bajada
     private Puerta puertaPiso; //Puerta del piso
     private Ascensor ascensor; //Ascensor
 
@@ -20,11 +20,11 @@ public class Piso {
     }
 
     //Método getters y setters
-    public PlantillaBtns getBtnSubir() {
+    public Botones getBtnSubir() {
         return btnSubir;
     }
 
-    public PlantillaBtns getBtnBajar() {
+    public Botones getBtnBajar() {
         return btnBajar;
     }
 

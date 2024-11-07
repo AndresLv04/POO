@@ -1,7 +1,7 @@
 import java.util.Random;
 
 import Botones.BtnsAscensor;
-import Botones.PlantillaBtns;
+import Botones.Botones;
 import Puertas.Puerta;
 import Puertas.PuertaAscensor;
 import Puertas.PuertaPiso;
@@ -10,7 +10,7 @@ public class Ascensor {
     //Atributos
     private Puerta puertaAscensor; //Puerta ascensor
     private Puerta puertaPiso; //Puertas piso
-    private PlantillaBtns btnsAscensor; //Botones que están dentro del ascensor
+    private Botones btnsAscensor; //Botones que están dentro del ascensor
     private int ubnActual; //Ubicación del ascensor
     private String estado; //Estado del ascensor si está subiendo, bajando o mantenimiento
 
@@ -83,3 +83,4 @@ public class Ascensor {
 
 
 }
+
