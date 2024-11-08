@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class SistemaControl {
-    private Ascensor ascensor = new Ascensor();
+    private Ascensor ascensor;
     private Piso[] pisos;
     private Scanner sc;
 
