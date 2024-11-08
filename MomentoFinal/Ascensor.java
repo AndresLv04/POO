@@ -1,3 +1,4 @@
+package Diagrama;
 import java.util.Random;
 
 import Botones.BtnsAscensor;
