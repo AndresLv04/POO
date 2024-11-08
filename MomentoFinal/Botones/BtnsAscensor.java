@@ -5,7 +5,7 @@ public class BtnsAscensor extends Botones{
     //El parámetro es para saber en a que piso quiere ir
     @Override
     public void presionar(int piso) {
-        System.out.println("Presionado el piso " + piso);
+        System.out.print("Presionado el piso " + piso);
         senalConfirmation();
     }
 }

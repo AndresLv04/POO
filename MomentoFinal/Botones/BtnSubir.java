@@ -6,7 +6,7 @@ public class BtnSubir extends Botones {
     //parámetro piso permite saber donde se presiono el botón
     @Override
     public void presionar(int piso) {
-        System.out.println("Presionado botón de subida en el piso " + piso);
+        System.out.print("Presionado botón de subida en el piso " + piso);
         senalConfirmation();
     }
 }

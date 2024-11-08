@@ -11,7 +11,7 @@ public class SistemaControl {
         this.sc = new Scanner(System.in);
 
         //For que permite crear los pisos  y enlazarlos al ascensor
-        for(int i = 1; i < pisos.length; i++){
+        for(int i = 0; i < pisos.length; i++){
             pisos[i] = new Piso(ascensor);
         }
     }
@@ -53,7 +53,7 @@ public class SistemaControl {
     
         } while (!valida);
         
-
+        ascensor.mostrarBtns();
         
         System.out.print("¿Que piso vas?: ");
         int pisoDestino = sc.nextInt();

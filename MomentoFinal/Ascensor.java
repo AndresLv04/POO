@@ -53,7 +53,8 @@ public class Ascensor {
                 Thread.sleep(2000);
             }
 
-            System.out.println("El ascensor a llegado al piso " + ubnAscensor);
+            System.out.print("El ascensor a llegado al piso " + ubnAscensor + " ");
+            btnsAscensor.senalConfirmationApagada();
             Thread.sleep(1000);
             puertaAscensor.abrirPuerta();
             puertaPiso.abrirPuerta();
@@ -80,6 +81,21 @@ public class Ascensor {
         mover(pisoDestino);
     }
 
+    public void mostrarBtns(){
+        System.out.println("  Pisos: ");
+        System.out.println("---------");
+        System.out.println("|   0   |");
+        System.out.println("---------");
+        System.out.println("|   1   |");
+        System.out.println("---------");
+        System.out.println("|   2   |");
+        System.out.println("---------");
+        System.out.println("|   3   |");
+        System.out.println("---------");
+        System.out.println("|   4   |");
+        System.out.println("---------");
+
+    }
 
 
 }

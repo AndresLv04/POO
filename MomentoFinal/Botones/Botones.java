@@ -5,12 +5,12 @@ public abstract class Botones {
 
     //Método qué muestra la señal de confirmación que un botón fue presionado
     public void senalConfirmation(){
-        System.out.println("Emitiendo sonido y luz encendida");
+        System.out.println(" emitiendo sonido y luz encendida");
     }
 
     //Método para apagar la señal de confirmación de la luz
     public void senalConfirmationApagada(){
-        System.out.println("Apagada luz");
+        System.out.println(" apagada luz");
     }
 
     //Método abstracto que permite representar la acción que fue presionado
