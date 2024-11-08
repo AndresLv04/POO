@@ -8,14 +8,14 @@ import Puertas.PuertaPiso;
 
 public class Ascensor {
     //Atributos
+    private int ubnAscensor; //Ubicación del ascensor
+    private Botones btnsAscensor; //Botones que están dentro del ascensor
+    private String estado; //Estado del ascensor si está subiendo, bajando o parado
     private Puerta puertaAscensor; //Puerta ascensor
     private Puerta puertaPiso; //Puertas piso
-    private Botones btnsAscensor; //Botones que están dentro del ascensor
-    private int ubnActual; //Ubicación del ascensor
-    private String estado; //Estado del ascensor si está subiendo, bajando o mantenimiento
 
     public Ascensor() {
-        this.ubnActual = 1; //Inicializando ubicación desde el primer piso
+        this.ubnAscensor = 0; //Inicializando ubicación desde el primer piso
         this.puertaAscensor = new PuertaAscensor();
         this.btnsAscensor = new BtnsAscensor();
         this.puertaPiso = new PuertaPiso();
@@ -25,8 +25,8 @@ public class Ascensor {
     //Método para mostrar donde esta ubicado el ascensor
     public void mostrarPisoAscensor() {
         Random random = new Random();
-        ubnActual = random.nextInt(4) + 0;
-        System.out.println("\n El ascensor esta " + estado + " en el piso " + ubnActual + "\n");
+        ubnAscensor = random.nextInt(4) + 0;
+        System.out.println("\n El ascensor esta " + estado + " en el piso " + ubnAscensor + "\n");
     }
 
     //Método para mover el ascensor
@@ -34,7 +34,7 @@ public class Ascensor {
         try{
 
             //Condicional para saber mostrar el estado del ascensor
-            if (pisoDestino > ubnActual) {
+            if (pisoDestino > ubnAscensor) {
                 estado = "subiendo";
             } else {
                 estado = "bajando";
@@ -43,31 +43,31 @@ public class Ascensor {
             System.out.println("El ascensor está " + estado);
 
             //Este ciclo permite simular que el ascensor está subiendo o bajando
-            while(pisoDestino != ubnActual) {
-                if (pisoDestino > ubnActual){
-                    ubnActual++;
+            while(pisoDestino != ubnAscensor) {
+                if (pisoDestino > ubnAscensor){
+                    ubnAscensor++;
                 }else{
-                    ubnActual--;
+                    ubnAscensor--;
                 }
-                System.out.println("Ascensor en el piso " + ubnActual );
+                System.out.println("Ascensor en el piso " + ubnAscensor );
                 Thread.sleep(2000);
             }
 
-            System.out.println("El ascensor a llegado al piso " + ubnActual);
+            System.out.println("El ascensor a llegado al piso " + ubnAscensor);
             Thread.sleep(1000);
             puertaAscensor.abrirPuerta();
             puertaPiso.abrirPuerta();
             Thread.sleep(1000);
             estado = "parado";
-            System.out.println("Las puertas del ascensor y del piso " + ubnActual + " están abiertas.");
+            System.out.println("Las puertas del ascensor y del piso " + ubnAscensor + " están abiertas.");
             Thread.sleep(5000);
             puertaPiso.cerrarPuerta();
             puertaAscensor.cerrarPuerta();
-            System.out.println("Las puertas del ascensor y del piso " + ubnActual + " están cerradas.");
+            System.out.println("Las puertas del ascensor y del piso " + ubnAscensor + " están cerradas.");
 
 
         }catch (InterruptedException e){
-            System.out.println("El ascensor esta en el piso " + ubnActual);
+            System.out.println("El ascensor esta en el piso " + ubnAscensor);
         }
 
 
